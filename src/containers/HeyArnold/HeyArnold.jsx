@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react/cjs/react.production.min';
+import React, { useState, useEffect } from 'react';
+import { fetchCharacters } from '../../services/hey-arnold';
 import CharacterList from '../../components/CharacterList/CharacterList';
 import Loading from '../../components/Loading/Loading';
-import { fetchCharacters } from '../../services/hey-arnold';
 
 const HeyArnold = () => {
   const [loading, setLoading] = useState(true);
