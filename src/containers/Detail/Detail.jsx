@@ -18,7 +18,7 @@ const Detail = () => {
   if(loading) return <Loading />;
   return (
     <div>
-      <CharacterDetail {...data}/>
+      <CharacterDetail name={data.name} image={data.image}/>
     </div>
   );
 };
