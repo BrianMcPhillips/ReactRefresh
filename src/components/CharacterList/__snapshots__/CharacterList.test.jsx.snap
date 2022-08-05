@@ -5,10 +5,17 @@ exports[`CharacterList component renders CharacterList 1`] = `
   <ul>
     <li>
       <div>
-        <img
-          alt="Test"
-          src="http://placecage.com/200/200"
-        />
+        <a
+          href="/detail/12345"
+        >
+          <img
+            alt="Test"
+            src="http://placecage.com/200/200"
+          />
+        </a>
+        <h2>
+          Test
+        </h2>
       </div>
     </li>
   </ul>
