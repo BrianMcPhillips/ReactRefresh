@@ -6,13 +6,15 @@ import {
   Switch
 } from 'react-router-dom';
 import Detail from '../../containers/Detail/Detail';
+import Header from '../Header/Header';
 
 export default function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path="/" component={HeyArnold}/>
-        <Route exact path="/detail:id" component={Detail}/>
+        <Route exact path="/detail/:id" component={Detail}/>
       </Switch>
     </Router>
   );

@@ -2,18 +2,16 @@
 
 exports[`Character component renders Character 1`] = `
 <DocumentFragment>
-  <div>
-    <a
-      href="/detail/124532"
-    >
-      <img
-        alt="Test"
-        src="http://placecage.com/200/200"
-      />
-    </a>
-    <h2>
-      Test
-    </h2>
-  </div>
+  <a
+    href="/detail/124532"
+  >
+    <img
+      alt="Test"
+      src="http://placecage.com/200/200"
+    />
+  </a>
+  <h2>
+    Test
+  </h2>
 </DocumentFragment>
 `;

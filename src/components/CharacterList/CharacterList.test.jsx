@@ -14,6 +14,11 @@ describe('CharacterList component', () => {
               name: 'Test',
               image: 'http://placecage.com/200/200',
               _id: '12345'
+            },
+            {
+              name: 'Test2',
+              image: 'http://placecage.com/200/200',
+              _id: '123456'
             }
           ]}
         />

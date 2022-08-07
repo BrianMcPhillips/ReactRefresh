@@ -8,6 +8,7 @@ const Detail = () => {
   const [loading, setLoading] = useState(true);
 
   const { id } = useParams(); 
+  
   useEffect(() => {
     fetch(`https://hey-arnold-api.herokuapp.com/api/v1/characters/${id}`)
       .then(res => res.json())
@@ -18,7 +19,7 @@ const Detail = () => {
   if(loading) return <Loading />;
   return (
     <div>
-      <CharacterDetail name={data.name} image={data.image}/>
+      <CharacterDetail {...data} />
     </div>
   );
 };
