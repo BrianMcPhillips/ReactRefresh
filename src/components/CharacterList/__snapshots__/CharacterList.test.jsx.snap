@@ -4,19 +4,30 @@ exports[`CharacterList component renders CharacterList 1`] = `
 <DocumentFragment>
   <ul>
     <li>
-      <div>
-        <a
-          href="/detail/12345"
-        >
-          <img
-            alt="Test"
-            src="http://placecage.com/200/200"
-          />
-        </a>
-        <h2>
-          Test
-        </h2>
-      </div>
+      <a
+        href="/detail/12345"
+      >
+        <img
+          alt="Test"
+          src="http://placecage.com/200/200"
+        />
+      </a>
+      <h2>
+        Test
+      </h2>
+    </li>
+    <li>
+      <a
+        href="/detail/123456"
+      >
+        <img
+          alt="Test2"
+          src="http://placecage.com/200/200"
+        />
+      </a>
+      <h2>
+        Test2
+      </h2>
     </li>
   </ul>
 </DocumentFragment>
