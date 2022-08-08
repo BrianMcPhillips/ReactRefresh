@@ -15,7 +15,10 @@ const HeyArnold = () => {
 
   if(loading) return <Loading />;
   return (
-    <CharacterList data={data}/>
+    <div data-testid="characters" >
+      <CharacterList data={data}/>
+    </div>
+    
   );
 
 };

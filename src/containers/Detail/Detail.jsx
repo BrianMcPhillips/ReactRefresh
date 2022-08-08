@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CharacterDetail from '../../components/CharacterDetail/CharacterDetail';
 import Loading from '../../components/Loading/Loading';
+import { fetchSingleCharacter } from '../../services/hey-arnold';
 
 const Detail = () => {
   const [data, setData] = useState({});
@@ -10,8 +11,7 @@ const Detail = () => {
   const { id } = useParams(); 
   
   useEffect(() => {
-    fetch(`https://hey-arnold-api.herokuapp.com/api/v1/characters/${id}`)
-      .then(res => res.json())
+    fetchSingleCharacter(id)
       .then(data => setData(data))
       .finally(setLoading(false));
   }, []);
